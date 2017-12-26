@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import toggleOpen from '../decorators/toggleOpen';
 
 class Article extends Component {
   static defaultProps = {
@@ -16,7 +15,7 @@ class Article extends Component {
   getBody() {
     const { article, isOpen } = this.props;
     if (!isOpen) return null;
-    return <section>{article.body}</section>;
+    return <p>{article.body}</p>;
   }
   render() {
     const { article, isOpen, toggleOpen } = this.props;
