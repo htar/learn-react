@@ -18,5 +18,6 @@
 .history
 
 npm-debug.log*
+yarn.log
 yarn-debug.log*
 yarn-error.log*

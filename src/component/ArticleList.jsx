@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Article from './Article';
 import './ArticleList.css';
 
-class List extends Component {
+class ArticleList extends Component {
   render() {
     const articleElement = this.props.articles.map(article => {
       return (
@@ -18,4 +18,4 @@ class List extends Component {
     );
   }
 }
-export default List;
+export default ArticleList;
